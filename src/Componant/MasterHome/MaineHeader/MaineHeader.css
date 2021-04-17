@@ -1,0 +1,7 @@
+.head-bg{
+    background-image:linear-gradient(rgba(7, 7, 7, 0.411), rgba(7,7,7, 0.9)), url(../../../Image/bgbanar.jpg);
+    /* background-color: rgba(0, 0, 0, 0.103); */
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
