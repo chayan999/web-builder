@@ -1,27 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReviewInfo from '../ReviewInfo/ReviewInfo';
 import '../ReviewInfo/ReviewInfo.css'
 import aba from '../../../Image/profile1.jpg'
+import { useEffect } from 'react';
 const Review = () => {
-    const reviewData = [
-        {
-            id: 1,
-            name: 'Michael Gare ',
-            image: aba,
-        },
-        {
-            id: 2,
-            name: 'Michael Gare ',
-            image: aba,
-
-
-        },
-        {
-            id: 3,
-            name: 'Michael Gare ',
-            image: aba,
-        }
-    ]
+    const [review, setReview] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:5000/review')
+            .then(res => res.json())
+            .then(data => setReview(data))
+    }, [])
     return (
         <div className='container review-container'>
             <div class="mb-5">
@@ -30,7 +18,7 @@ const Review = () => {
                     <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" >Read Customer Reviews</h1>
                 </div>
                 {
-                    reviewData.map(review => <ReviewInfo review={review}></ReviewInfo>)
+                    review.map(review => <ReviewInfo review={review}></ReviewInfo>)
                 }
             </div>
         </div >

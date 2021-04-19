@@ -11,7 +11,12 @@ const ServiceInfo = ({ service }) => {
                 <div className="card-flyer">
                     <div className="text-box">
                         <div className="image-box">
-                            <img src={service.image} alt="" />
+                            {
+                                service.image ? <img src={`data:image/jpeg;base64,${service?.image.img}`} alt="" />
+                                    :
+                                    <img src={`http://localhost:5000/${service.image}`} alt="" />
+                            }
+
                         </div>
                         <div className="text-container">
                             <h6>{service.title}</h6>
