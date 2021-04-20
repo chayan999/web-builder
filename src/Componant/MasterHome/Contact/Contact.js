@@ -51,7 +51,7 @@ const Contact = () => {
                     <div class="col-md-3 contact-md-3">
                         <div class="contact-info">
 
-                            <h2>Contact Us</h2>
+                            <h2>Review Us</h2>
                             <h4>We would love to hear from you !</h4>
                         </div>
                     </div>
@@ -59,14 +59,14 @@ const Contact = () => {
                         <div class="contact-form">
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <div class="form-group">
-                                    <label class="control-label col-sm-2" for="fname">First Name:</label>
+                                    <label class="control-label col-sm-2" for="fname"> Name:</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" name='name' {...register("name")} />
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="control-label col-sm-2" for="email">Profession</label>
+                                    <label class="control-label col-sm-2" for="email">Email</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" {...register("email")} id="email" placeholder="Enter email" name="email" />
                                     </div>

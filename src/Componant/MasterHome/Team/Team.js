@@ -19,7 +19,7 @@ const Team = () => {
         },
         {
             id: 3,
-            name: 'Jhon Due ',
+            name: 'Recherd Jhon ',
             image: profile3,
             depeloper: 'Python Depeloper',
         },

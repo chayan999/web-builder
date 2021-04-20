@@ -19,7 +19,7 @@ const ServiceInfo = ({ service }) => {
 
                         </div>
                         <div className="text-container">
-                            <h6>{service.title}</h6>
+                            <h6>{service.name}</h6>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                             <h6 className='p-2'>Price ${service.price}</h6>
                             <Link to='/shipment' className='btn btn-success'>Buy NOW</Link>

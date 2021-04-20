@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DashBord from '../DashBord/DashBord';
 
 const AddService = () => {
 
@@ -38,12 +39,13 @@ const AddService = () => {
 
     return (
         <div>
-            <div className="col-md-10 p-4 pr-5" style={{ position: "absolute", right: 0, backgroundColor: "#F4FDFB" }}>
+            <DashBord></DashBord>
+            <div className="col-md-10 p-4 pr-5 ml-5" style={{ position: "absolute", right: 0, backgroundColor: "#F4FDFB" }}>
                 <h5 className="text-brand">Add a Services</h5>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">Add Services</label>
-                        <input onBlur={handleBlur} type="tsxt" className="form-control" name="name" placeholder="Service Name" />
+                        <label htmlFor="exampleInputEmail1">Add Services name</label>
+                        <input onBlur={handleBlur} type="text" className="form-control" name="name" placeholder="Service Name" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Price</label>

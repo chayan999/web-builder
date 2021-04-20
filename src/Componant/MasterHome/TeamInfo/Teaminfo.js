@@ -11,6 +11,7 @@ const Teaminfo = ({ team }) => {
                             <div class="card-body text-center">
                                 <p><img class=" img-fluid" src={team.image} alt='' /></p>
                                 <h4 class="card-title">{team.name}</h4>
+                                <h4 class="card-title">{team.depeloper}</h4>
                                 <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quasi.</p>
                                 <a href="t" class="btn btn-primary btn-sm" ><i class="fa fa-plus"></i></a>
                             </div>

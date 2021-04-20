@@ -12,6 +12,7 @@ import AddService from './Componant/AddService/AddService';
 import { createContext, useState } from 'react';
 import Login from './Componant/Login/Login/Login';
 import PrivateRoute from './Componant/Login/PrivateRoute/PrivateRoute'
+import AllData from './Componant/AllServices/AllData';
 export const UserContext = createContext();
 
 function App() {
@@ -24,9 +25,9 @@ function App() {
           <Route exact path='/'>
             <Home></Home>
           </Route>
-          <Route path='/shipment'>
+          <PrivateRoute path='/shipment'>
             <Shapmint></Shapmint>
-          </Route>
+          </PrivateRoute>
 
           <PrivateRoute path='/dashbord'>
             <DashBord></DashBord>
@@ -38,6 +39,10 @@ function App() {
           </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+
+          <Route path='/allData'>
+            <AllData></AllData>
           </Route>
         </Switch>
       </Router>
