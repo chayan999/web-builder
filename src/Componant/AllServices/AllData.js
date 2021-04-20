@@ -4,13 +4,13 @@ import DashBord from '../DashBord/DashBord';
 const AllData = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allServices')
+        fetch('https://intense-shore-26527.herokuapp.com/allServices')
             .then(res => res.json())
             .then(data => setServices(data))
     }, []);
 
     const deleteProduct = (_id) => {
-        fetch(`http://localhost:5000/delete/${_id}`, {
+        fetch(`https://intense-shore-26527.herokuapp.com/delete/${_id}`, {
 
             method: 'DELETE',
         }).then((result) => {

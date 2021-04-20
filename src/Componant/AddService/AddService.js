@@ -24,7 +24,7 @@ const AddService = () => {
         formData.append('price', info.price);
         formData.append('file', file);
 
-        fetch('http://localhost:5000/addServices', {
+        fetch('https://intense-shore-26527.herokuapp.com/addServices', {
             method: 'POST',
             body: formData
         })

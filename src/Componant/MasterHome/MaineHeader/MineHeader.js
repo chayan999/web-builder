@@ -3,7 +3,7 @@ import homeimage from '../../../Image/homeimage.jpg';
 import './MaineHeader.css'
 const MineHeader = () => {
     return (
-        <main style={{ height: '600px' }} className="row d-flex align-items-center head-bg ">
+        <main className="row d-flex align-items-center head-bg ">
             <div className="col-md-4 offset-md-1 text-light">
                 <h1 className='text-capitalize text-light '>
                     Welcome to <br />Web builder web site

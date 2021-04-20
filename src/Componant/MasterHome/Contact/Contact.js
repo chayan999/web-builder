@@ -19,7 +19,7 @@ const Contact = () => {
 
         };
         console.log(eventData)
-        const url = `http://localhost:5000/addReview`;
+        const url = `https://intense-shore-26527.herokuapp.com/addReview`;
         fetch(url, {
             method: 'POST',
             headers: {

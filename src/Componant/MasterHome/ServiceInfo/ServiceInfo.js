@@ -14,7 +14,7 @@ const ServiceInfo = ({ service }) => {
                             {
                                 service.image ? <img src={`data:image/jpeg;base64,${service?.image.img}`} alt="" />
                                     :
-                                    <img src={`http://localhost:5000/${service.image}`} alt="" />
+                                    <img src={`https://intense-shore-26527.herokuapp.com/${service.image}`} alt="" />
                             }
 
                         </div>
